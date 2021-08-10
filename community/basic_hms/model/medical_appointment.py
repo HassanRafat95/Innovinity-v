@@ -86,7 +86,7 @@ class medical_appointment(models.Model):
 
 	def create_invoice(self):
 		lab_req_obj = self.env['medical.appointment']
-		account_invoice_obj  = self.env['account.invoice']
+		account_invoice_obj = self.env['account.invoice']
 		account_invoice_line_obj = self.env['account.invoice.line']
 
 		lab_req = lab_req_obj
